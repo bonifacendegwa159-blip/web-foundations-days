@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --card-color: #ffffff;
+    --border-color: #ccc;
+    --button-color: #222;
+    --button-text: #ffffff;
+}
+
+body.dark {
+    --bg-color: #222;
+    --text-color: #f4f4f4;
+    --card-color: #333;
+    --border-color: #555;
+    --button-color: #f4f4f4;
+    --button-text: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    resize: vertical;
+}
+
+button {
+    padding: 10px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--button-text);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
